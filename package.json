@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-onshape",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Onshape eslint plugin",
   "keywords": [
     "eslint",
@@ -10,12 +10,14 @@
   "author": "Mark Barr",
   "main": "lib/index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint lib/**/*.js || exit 0",
+    "fix": "./node_modules/.bin/eslint --fix lib/**/*.js || exit 0"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
-    "eslint": "~3.9.1"
+    "eslint": "^3.9.1"
   },
   "engines": {
     "node": ">=0.10.0"
