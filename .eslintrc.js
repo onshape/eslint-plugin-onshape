@@ -1,4 +1,4 @@
-{
+module.exports = {
   "env": {
     "es6": true,
     "node": true
@@ -10,8 +10,8 @@
     }],
     "indent": ["error", 2, {                              // Two spaces per indentation, no tabs allowed (fixable)
       "SwitchCase": 1                                     // Overrides default indentation enforcement for switch cases.
-                                                          // Note integer represents number of indentation units.
-                                                          // Ergo, 2 spaces/indentation * 1 indentation = 2 spaces
+      // Note integer represents number of indentation units.
+      // Ergo, 2 spaces/indentation * 1 indentation = 2 spaces
     }],
     "comma-spacing": "error",                             // Enforces `a, b`. Will reject `a,b` (fixable)
     "semi": "error",                                      // Enforces semicolons after statements (fixable)
@@ -45,7 +45,7 @@
     "no-debugger": "error",                               // Don't allow submissions which retain debugger statements
     "no-caller": "error",                                 // No access of `caller` and `callee` attributes. Performance killers
     "no-undef": "error",                                  // Don't allow access of implicit globals
-                                                          // (see above list of accepted globals)
+    // (see above list of accepted globals)
     "keyword-spacing": "error",                           // Accept `if () {}`, reject `if() {}`
     "no-unreachable": "error",
     "no-cond-assign": ["error", "except-parens"],         // No assignments inside conditionals
@@ -116,4 +116,4 @@
     "strict": "error", // require strict mode directives
     "yoda": "error" // disallow Yoda conditions
   }
-}
+};
